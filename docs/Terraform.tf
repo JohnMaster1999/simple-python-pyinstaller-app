@@ -77,7 +77,7 @@ resource "docker_container" "jenkins_blueocean" {
 	}
 	volumes {
 		volume_name = docker_volume.jenkins_certs.name
-		container_path = "/certs/client"
+		container_path = "/certs/clien"
 		read_only = true
 	}
 	volumes {
